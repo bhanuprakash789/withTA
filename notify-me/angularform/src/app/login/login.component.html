@@ -1,0 +1,22 @@
+<br><br><br>
+<div >
+    <form [formGroup]="profileForm">
+      <label >Username</label>
+      <input formControlName="username" >
+      <br>
+      <label >Email</label>
+      &nbsp; &nbsp; &nbsp;
+      <input formControlName="email">
+      <br>
+      <label >Password</label>
+      <input formControlName="password" type="password">
+      <br> <br> 
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <button type="button" [disabled]="!profileForm.valid" (click)="login()">Sign In</button>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <button type="button" [disabled]="!profileForm.valid" (click)="register()">Sign Up</button><br>
+      <button type="button" [disabled]="!profileForm.valid" (click)="loginta()">Sign In as TA</button>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <button type="button" [disabled]="!profileForm.valid" (click)="registerta()">Sign Up as TA</button>
+    </form></div>
+ <router-outlet></router-outlet> 
